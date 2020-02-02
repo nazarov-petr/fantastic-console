@@ -15,8 +15,28 @@ c.cl('Login', 'onLogin', 'request', loginRequest)
 
 ## Methods
    
-|metod|example|name|output format
-|---|---|---|---|
-|`.cl(component, method, variable, value)`|.rc('Login', 'onLogin', 'request', loginRequest)|Component Log|`<Component>.method()variable: value`|  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+|metod|name|
+|---|---|
+|`.cl(component, method, variable, value)`|Component Log|
+|`.fl(file, method, variable, value)`|File Log|
+|`.ct(file, method, variable, value [,columns])`|Component Table|
+|`.ft(file, method, variable, value) [,columns]`|File Table|
+|`.ctrace(file, method, variable, value)`|Component Trace|
+|`.ftrace(file, method, variable, value)`|File Trace|
+|`.cfull(file, method, variable, value)`|Component Trace|
+|`.ffrace(file, method, variable, value)`|File Trace|
+
+### Log (.cl & .fl)
+Component Log and File Log. This is what you shuld use instead of console.log(). It is almost the same, but it gives you an exact file/ component, method and variable names
+```
+c.cl('Login', 'onLogin', 'responce', loginResponse)
+c.fl('LoginService.js', 'post', 'request', loginRequest)
+```
+output
+
+### Table (.ct & .ft)
+Component Table and File Table. Same as console.tabel() but with preatty name
+```
+c.cl('Login', 'onLogin', 'responce', loginResponse)
+c.fl('LoginService.js', 'post', 'request', loginRequest)
+```

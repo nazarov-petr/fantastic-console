@@ -27,22 +27,17 @@ const people = [{
   'firstName': 'Harry',
   'lastName': 'Potter',
   'age': 20
-}]; // c.log('======= React Component Log =======')
+}]; // c.log('======= Component Log =======')
 // c.cl('Login', 'onLogin', 'responce', loginResponse)
-// c.cl('', 'onLogin', 'responce', loginResponse)
-// c.cl('Login', '', 'responce', loginResponse)
-// c.cl('Login', 'onLogin', '', loginResponse)
-// c.cl('Login', 'onLogin', 'responce')
+// c.log('======= File Log =======')
 // c.fl('LoginService.js', 'post', 'request', loginRequest)
-// c.fl('', 'post', 'request', loginRequest)
-// c.fl('LoginService.js', '', 'request', loginRequest)
-// c.fl('LoginService.js', 'post', '', loginRequest)
-// c.fl('LoginService.js', 'post', 'request', )
+// c.log('======= Tables =======')
 
 _index.default.ct('People', 'onGetPeople', 'responce', people);
 
-_index.default.ct('People', 'onGetPeople', 'responce', people, ['firstName', 'age']);
-
-_index.default.ft('People.js', 'onGetPeople', 'responce', people);
-
-_index.default.ft('People.js', 'onGetPeople', 'responce', people, ['firstName', 'age']);
+_index.default.ft('People.js', 'onGetPeople', 'responce', people, ['firstName', 'age']); // c.log('======= Trace =======')
+// c.ctrace('People', 'onGetPeople', 'responce')
+// c.ftrace('People.js', 'onGetPeople', 'responce')
+// c.log('======= Full =======')
+// c.cfull('Login', 'post', 'request', loginRequest)
+// c.ffull('LoginService.js', 'post', 'request', loginRequest)
