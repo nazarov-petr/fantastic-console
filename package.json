@@ -1,6 +1,6 @@
 {
-  "name": "awesome-console-log",
-  "version": "0.1.0",
+  "name": "fantastic-console",
+  "version": "0.1.1",
   "description": "A super powerful console log alternative",
   "main": "dist/index.js",
   "author": "Nazarov Petr <mrzueck@gmail.com>",
@@ -14,9 +14,8 @@
     "babelify": "^10.0.0"
   },
   "scripts": {
-    "build": "babel src/index.js -d dist",
-    "buildNodeTest": "babel src -d dist/test",
-    "nodeTest": "node ./dist/test/index.test.js"
+    "build": "babel src -d dist",
+    "testNode": "node dist/index.test.js"
   },
   "dependencies": {
     "colors": "^1.4.0"

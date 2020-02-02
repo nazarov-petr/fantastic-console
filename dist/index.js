@@ -33,10 +33,10 @@ class AwesomeConsoleLog {
     const browserStyledDescriptionString = [`%c<${component}>.%c${method}() %c${variable}:`, `color: ${browserColors.component}`, `color: ${browserColors.method}`, `color: ${browserColors.variable}`];
     const nodeDescriptionStyledString = [`<${component}>`[nodeColors['component']], `.${method}()`[nodeColors['method']], `${variable}:`[nodeColors['variable']]];
 
-    if (this.isBrowser) {
-      console.log(...nodeDescriptionStyledString, value);
-    } else {
+    if (this.isBrowser()) {
       console.log(...browserStyledDescriptionString, value);
+    } else {
+      console.log(...nodeDescriptionStyledString, value);
     }
   }
 

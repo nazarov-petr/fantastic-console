@@ -20,7 +20,6 @@ class AwesomeConsoleLog {
 
   rclog(component = '', method = '', variable = '', value = '') {
     
-    
     const browserStyledDescriptionString = [
       `%c<${component}>.%c${method}() %c${variable}:`,
       `color: ${browserColors.component}`,
@@ -33,10 +32,10 @@ class AwesomeConsoleLog {
       `.${method}()`[nodeColors['method']],
       `${variable}:`[nodeColors['variable']],
     ]
-    if (this.isBrowser) {
-      console.log(...nodeDescriptionStyledString, value);
+    if (this.isBrowser()) {
+      console.log(...browserStyledDescriptionString, value);
     } else {
-      console.log(...browserStyledDescriptionString, value)
+      console.log(...nodeDescriptionStyledString, value)
     }
     
   }
@@ -49,4 +48,4 @@ class AwesomeConsoleLog {
 
 
 const awesomeConsoleLog = new AwesomeConsoleLog();
-export default awesomeConsoleLog;
+export default awesomeConsoleLog
