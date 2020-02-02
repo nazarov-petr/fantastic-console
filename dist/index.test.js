@@ -32,12 +32,14 @@ const people = [{
 // c.log('======= File Log =======')
 // c.fl('LoginService.js', 'post', 'request', loginRequest)
 // c.log('======= Tables =======')
-
-_index.default.ct('People', 'onGetPeople', 'responce', people);
-
-_index.default.ft('People.js', 'onGetPeople', 'responce', people, ['firstName', 'age']); // c.log('======= Trace =======')
+// c.ct('People', 'onGetPeople', 'responce', people)
+// c.ft('People.js', 'onGetPeople', 'responce', people, ['firstName', 'age'])
+// c.log('======= Trace =======')
 // c.ctrace('People', 'onGetPeople', 'responce')
 // c.ftrace('People.js', 'onGetPeople', 'responce')
-// c.log('======= Full =======')
-// c.cfull('Login', 'post', 'request', loginRequest)
-// c.ffull('LoginService.js', 'post', 'request', loginRequest)
+
+_index.default.log('======= Full =======');
+
+_index.default.cfull('Login', 'post', 'request', loginRequest);
+
+_index.default.ffull('LoginService.js', 'post', 'request', loginRequest);
