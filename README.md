@@ -1,4 +1,4 @@
-A powerful libery for beautiful console.log() output. The idea behind it to always know what and where is being console.loged.
+A powerful libery for beautiful console.log() output. The idea behind it to always know what and where is being console.loged. Works both in browser and Node.js console
 
 ## Install
 `npm install fantastic-console`
@@ -8,16 +8,15 @@ or
 ## Usage
 ```
 import c from fantastic-console
-
 ...
-
-.rc('Login', 'onLogin', 'request', loginRequest
+c.cl('Login', 'onLogin', 'request', loginRequest)
 ```
+
 
 ## Methods
    
 |metod|example|name|output format
 |---|---|---|---|
-|`.rc(component, method, variable, value)`|.rc('Login', 'onLogin', 'request', loginRequest)|React Component|`<Component>.method()variable: value`|  |
+|`.cl(component, method, variable, value)`|.rc('Login', 'onLogin', 'request', loginRequest)|Component Log|`<Component>.method()variable: value`|  |
 |  |  |  |  |  |
 |  |  |  |  |  |
