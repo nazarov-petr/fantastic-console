@@ -1,13 +1,12 @@
-import colors from "colors"
 const browserColors = {
   component: 'red',
   method: 'blue',
   variable: 'green'
 }
 const nodeColors = {
-  component: 'red',
-  method: 'blue',
-  variable: 'green'
+  component: '\x1b[31m%s\x1b[0m',
+  method: '\x1b[34m%s\x1b[0m',
+  variable: '\x1b[32m%s\x1b[0m'
 }
 class AwesomeConsoleLog {
   isBrowser(){
@@ -17,7 +16,6 @@ class AwesomeConsoleLog {
       return true;
     }
   }
-
   rclog(component = '', method = '', variable = '', value = '') {
     
     const browserStyledDescriptionString = [
@@ -28,9 +26,8 @@ class AwesomeConsoleLog {
     ];
     
     const nodeDescriptionStyledString = [
-      `<${component}>`[nodeColors['component']],
-      `.${method}()`[nodeColors['method']],
-      `${variable}:`[nodeColors['variable']],
+      `<${nodeColors.component}>.${nodeColors.method}()${nodeColors.variable}:`,
+      component, method, variable
     ]
     if (this.isBrowser()) {
       console.log(...browserStyledDescriptionString, value);
