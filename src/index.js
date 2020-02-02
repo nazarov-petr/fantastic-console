@@ -8,7 +8,7 @@ const nodeColors = {
   method: '\x1b[34m%s\x1b[0m',
   variable: '\x1b[32m%s\x1b[0m'
 }
-class AwesomeConsoleLog {
+class FantasticConsole {
   isBrowser(){
     if ((typeof process !== 'undefined') && process && process.release && process.release.name === 'node'){
       return false;
@@ -44,5 +44,5 @@ class AwesomeConsoleLog {
 }
 
 
-const awesomeConsoleLog = new AwesomeConsoleLog();
-export default awesomeConsoleLog
+const fantasticConsole = new FantasticConsole();
+export default fantasticConsole

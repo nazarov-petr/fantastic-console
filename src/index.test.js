@@ -1,4 +1,4 @@
-import acl from './index'
+import c from './index'
 //date
 const loginRequest = {
   email: 'foo',
@@ -11,5 +11,6 @@ const loginResponse = {
   token_type: "Bearer"
 }
 console.log('======= React Component Log =======')
-acl.rclog('Login', 'onLogin', 'request', loginRequest)
-acl.rclog('Login', 'onLogin', 'responce', loginResponse)
+c.rc('Login', 'onLogin', 'request', loginRequest)
+c.rc('Login', 'onLogin', 'responce', loginResponse)
+
