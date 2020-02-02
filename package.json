@@ -1,7 +1,7 @@
 {
   "name": "fantastic-console",
-  "version": "0.1.2",
-  "description": "A super powerful console log alternative",
+  "version": "1.0.0",
+  "description": "A powerful library for beautiful console.log() output",
   "main": "dist/index.js",
   "author": "Nazarov Petr <mrzueck@gmail.com>",
   "license": "MIT",

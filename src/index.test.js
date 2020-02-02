@@ -29,19 +29,19 @@ const people = [
   },
 ]
 
-// c.log('======= Component Log =======')
-// c.cl('Login', 'onLogin', 'responce', loginResponce)
+c.log('======= Component Log =======')
+c.cl('Login', 'onLogin', 'responce', loginResponce)
 
-// c.log('======= File Log =======')
-// c.fl('LoginService.js', 'post', 'request', loginRequest)
+c.log('======= File Log =======')
+c.fl('LoginService.js', 'post', 'request', loginRequest)
 
-// c.log('======= Tables =======')
-// c.ct('People', 'onGetPeople', 'responce', people)
-// c.ft('People.js', 'onGetPeople', 'responce', people, ['firstName', 'age'])
+c.log('======= Tables =======')
+c.ct('People', 'onGetPeople', 'responce', people)
+c.ft('People.js', 'onGetPeople', 'responce', people, ['firstName', 'age'])
 
-// c.log('======= Trace =======')
-// c.ctrace('People', 'onGetPeople', 'responce')
-// c.ftrace('People.js', 'onGetPeople', 'responce')
+c.log('======= Trace =======')
+c.ctrace('People', 'onGetPeople', 'responce')
+c.ftrace('People.js', 'onGetPeople', 'responce')
 
 c.log('======= Full =======')
 c.cfull('Login', 'post', 'request', loginRequest)
