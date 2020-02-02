@@ -20,5 +20,13 @@
   },
   "dependencies": {
     "colors": "^1.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazarov-petr/awesome-console-log.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nazarov-petr/awesome-console-log/issues"
+  },
+  "homepage": "https://github.com/nazarov-petr/awesome-console-log#readme"
 }
