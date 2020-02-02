@@ -1,0 +1,24 @@
+{
+  "name": "awesome-console-log",
+  "version": "0.1.0",
+  "description": "A super powerful console log alternative",
+  "main": "dist/index.js",
+  "author": "Nazarov Petr <mrzueck@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-core": "^6.26.3",
+    "babelify": "^10.0.0"
+  },
+  "scripts": {
+    "build": "babel src/index.js -d dist",
+    "buildNodeTest": "babel src -d dist/test",
+    "nodeTest": "node ./dist/test/index.test.js"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
